@@ -74,7 +74,7 @@ video {
         text-align: center;
         z-index: 1;
         color: white;
-        background-color: rgba(0, 0, 0, 0.338);
+        background-color: rgba(0, 0, 0, 0.123);
       }
       #page1 h1::before {
         content: "Secure Your Systems";
@@ -164,48 +164,50 @@ video {
   position: relative;
   z-index: 10;
   justify-content: space-around;
+  margin-top: 20px;
 }
 #cards-container {
     /* background-color: red; */
-    height: 60vh;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 70px;
     position: relative;
     z-index: 10;
+    margin: 50px 0px;
   }
   .card {
-    height: 80%;
-    width: 24%;
+    height: 100%;
+    width: 24vw;
     /* background-color: blue; */
     border-radius: 20px;
     background-size: cover;
     background-position: center;
     overflow: hidden;
     transition: all ease 0.6s;
+    margin-bottom: 20px;
   }
   #card1 {
-    background-image: url();
+    background-image: url("https://plus.unsplash.com/premium_photo-1701179596614-9c64f50cda76?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   }
   #card2 {
-    background-image: url();
+    background-image: url("https://images.pexels.com/photos/5474284/pexels-photo-5474284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   }
   #card3 {
-    background-image: url();
+    background-image: url("https://images.pexels.com/photos/5952738/pexels-photo-5952738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   }
   .overlay {
     height: 100%;
     width: 100%;
-    background-color: #95c11e;
+    background-color: #2274e0;
     padding: 30px;
-    padding-top: 160px;
     opacity: 0;
-    transition: all ease 0.6s;
+    transition: ease-out 0.6s;
   }
   .overlay h4 {
     color: #000;
-    font-size: 40px;
+    font-size: 28px;
     text-transform: uppercase;
     white-space: nowrap;
     margin-bottom: 20px;
@@ -213,11 +215,36 @@ video {
   }
   .overlay p {
     color: #000;
-    font-size: 18px;
+    font-size: 17px;
+    width: 90%;
+    height: 90%;
   }
   .card:hover .overlay {
     opacity: 1;
   }
   .card:hover {
     transform: rotate3d(-1, 1, 0, 20deg);
+  }
+
+  #blu-div {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    background: linear-gradient(to left bottom, #0527a3, #2274e0);
+  }
+  #blu-div h4 {
+    width: 45%;
+    line-height: 50px;
+    color: #000;
+    text-align: center;
+    font-weight: 800;
+    font-size: 27px;
+    text-transform: uppercase;
+  }
+  #blu-div img {
+    height: 100%;
+    object-fit: cover;
+    width: 14%;
   }
